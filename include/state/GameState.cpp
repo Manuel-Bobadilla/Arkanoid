@@ -30,6 +30,9 @@ void GameState::init() {
     this->_cantVidas.setString(std::to_string(player.getLives()));
     this->_cantVidas.setPosition((this->_vidas.getPosition().x + this->_vidas.getGlobalBounds().width + 6), (this->_vidas.getPosition().y));
     this->_cantVidas.setFillColor(sf::Color().White);
+
+    this->brickInterface = tm.getBrickInterface();
+    this->cm.setBrickInterface(this->brickInterface);
 }
 
 void GameState::handleInput() {
@@ -71,11 +74,6 @@ void GameState::update() {
             this->_cantVidas.setString(std::to_string(player.getLives()));
         }
     }
-
-
-    brickInterface = tm.getBrickInterface();
-
-    cm.setBrickInterface(brickInterface);
 
     cm.collision();
 

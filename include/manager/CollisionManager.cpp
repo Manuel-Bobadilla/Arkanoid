@@ -7,6 +7,7 @@ CollisionManager::CollisionManager(Player &p, Ball &b, std::vector<Powerup*> &pu
     bullets = &bu;
     factory = new PowerupFactory(b, p, bu);
 }
+
 void CollisionManager::setBrickInterface(BrickInterface* brickInterface){
     this->brickInterface = brickInterface;
 }
