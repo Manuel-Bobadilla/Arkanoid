@@ -11,10 +11,10 @@ PowerupFactory::PowerupFactory(Ball &b, Player &p,std::vector<Bullet> &bu){
 }
 Powerup* PowerupFactory::getPowerup(){
     srand(time(NULL));
-    int aleatoryNumber = rand() % 5;
-    Powerup* p;
 
-    switch (aleatoryNumber) {
+    Powerup *p = nullptr;
+
+    switch (rand() % 5) {
         case 0: p = new PowerupBaseShoot(*player, *bullets);break;
         case 1: p = new PowerupBigBase(*player);break;
         case 2: p = new PowerupInvisible(*ball);break;
@@ -22,6 +22,7 @@ Powerup* PowerupFactory::getPowerup(){
         case 4: p = new PowerupSmallBase(*player);break;
         default: throw 1;
     }
+
 
     return p;
 }

@@ -57,7 +57,7 @@ bool CollisionManager::collisionBlock(Brick &b, int j){
 
     if (rec_ball.intersects(rec_Brick)){
 
-        if(b.getId() == 1){
+        if(b.getId() == 1){ //distinguir entre bloques del contorno y los internos
             if(100 > rand() % 100){
                 powerups->push_back(factory->getPowerup());
                 powerups->at(powerups->size() - 1)->setPosition(ball->getPosition());
