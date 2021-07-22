@@ -111,4 +111,5 @@ bool MenuState::isSoundEnabled() {
     if (gameMusic.getStatus() == sf::SoundSource::Playing) {
         return true;
     }
+    return false;
 }

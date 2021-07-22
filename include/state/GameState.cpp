@@ -81,11 +81,11 @@ void GameState::update(float dt) {
 
     ball.move();
 
-    for(int i = 0; i < bullets.size(); i++){
-        bullets.at(i).move();
+    for(auto & bullet : bullets){
+        bullet.move();
     }
   
-    for(int i = 0; i < powerup.size(); i++){
+    for(unsigned int i = 0; i < powerup.size(); i++){
         powerup.at(i)->move();
         if(powerup.at(i)->isActive()){
             powerup.at(i)->effect();

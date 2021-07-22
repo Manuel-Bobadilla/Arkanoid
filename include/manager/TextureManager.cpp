@@ -150,14 +150,14 @@ void TextureManager::draw(sf::RenderTarget &target, sf::RenderStates states) con
     player->getSprite().setPosition(player->getPosition().x, player->getPosition().y);
     target.draw(ball->getSprite());
     target.draw(player->getSprite());
-    for (int i=0; i<powerups->size(); i++){
-        powerups->at(i)->getSprite().setPosition(powerups->at(i)->getPosition().x, powerups->at(i)->getPosition().y);
-        target.draw(powerups->at(i)->getSprite());
+    for (auto & powerup : *powerups){
+        powerup->getSprite().setPosition(powerup->getPosition().x, powerup->getPosition().y);
+        target.draw(powerup->getSprite());
     }
 
-    for (int i=0; i<bullets->size(); i++){
-        bullets->at(i).getSprite().setPosition(bullets->at(i).getPosition().x, bullets->at(i).getPosition().y);
-        target.draw(bullets->at(i).getSprite());
+    for (auto & bullet : *bullets){
+        bullet.getSprite().setPosition(bullet.getPosition().x, bullet.getPosition().y);
+        target.draw(bullet.getSprite());
     }
 
     for(const auto &borders : brickInterface->getBorderb()){
