@@ -150,6 +150,7 @@ void TextureManager::draw(sf::RenderTarget &target, sf::RenderStates states) con
     player->getSprite().setPosition(player->getPosition().x, player->getPosition().y);
     target.draw(ball->getSprite());
     target.draw(player->getSprite());
+
     for (auto & powerup : *powerups){
         powerup->getSprite().setPosition(powerup->getPosition().x, powerup->getPosition().y);
         target.draw(powerup->getSprite());
