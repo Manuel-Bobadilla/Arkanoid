@@ -13,7 +13,7 @@ private:
     Player* player;
     tmx::Vector2f posicion;
 public:
-    ActionManager(Player& p, tmx::Vector2f pos, int window);//Player movement constructor
+    ActionManager(Player& p, int window);//Player movement constructor
 };
 
 #endif // INCLUDE_ACTIONMANAGER_H

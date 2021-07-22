@@ -20,9 +20,9 @@ private:
     TextureManager tm = TextureManager(player, ball, powerup, bullets);
     CollisionManager cm = CollisionManager(player, ball, powerup, bullets);
     AnimationManager<sf::Texture, Container<sf::Texture>> *it = player.getTextureContainer(0).createIterator();
-    tmx::Vector2f position; //almacena la posicion para modificarla y sobreescribirla
-    tmx::Vector2f playerPos;
-    tmx::Vector2f ballPosition;
+    tmx::Vector2f playerInitialPos;
+    tmx::Vector2f ballInitialPos;
+    tmx::Vector2f ballInitialVel;
     sf::Sprite background;
     int counter = 0;
     sf::Text _vidas;

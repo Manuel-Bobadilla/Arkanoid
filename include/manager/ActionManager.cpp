@@ -4,9 +4,9 @@
 
 #include "ActionManager.h"
 
-ActionManager::ActionManager(Player& p, tmx::Vector2f pos, int window){
+ActionManager::ActionManager(Player& p, int window){
     player = &p;
-    posicion = pos;
+    tmx::Vector2f posicion = player->getPosition();
 // Key Management
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)){
         if (posicion.x > 54){

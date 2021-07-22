@@ -12,9 +12,9 @@ GameState::GameState(GameDataPtr data) : _data(data) {
 }
 
 void GameState::init() {
-    this->position = player.getPosition();
-    this->playerPos = player.getPosition();
-    this->ballPosition = ball.getPosition();
+    this->playerInitialPos = player.getPosition();
+    this->ballInitialPos = ball.getPosition();
+    this->ballInitialVel = ball.getVelocity();
     this->_data->assets.loadTexture("Background", GAME_BACKGROUND_FILEPATH);
     this->background.setTexture(this->_data->assets.getTexture("Background"));
     this->_data->assets.loadFont("RetroFont", RETRO_FONT_FILEPATH);
@@ -64,8 +64,9 @@ void GameState::update() {
         if (player.getLives() == 1){
             this->_data->machine.addState(StateRef(new GameOverState(_data)), true);
         }else {
-            player.setPosition(playerPos);
-            ball.setPosition(ballPosition);
+            player.setPosition(playerInitialPos);
+            ball.setPosition(ballInitialPos);
+            ball.setVelocity(ballInitialVel);
             player.setLives(player.getLives() - 1);
             this->_cantVidas.setString(std::to_string(player.getLives()));
         }
@@ -95,8 +96,7 @@ void GameState::update() {
             }
         }
     }
-    ActionManager(player, position, this->_data->window.getSize().x);
-    this->position = player.getPosition();
+    ActionManager(player, this->_data->window.getSize().x);
     if(brickInterface->getMapb().empty()){
         this->_data->machine.addState(StateRef(new GameOverState(_data)), true);
     }
@@ -104,7 +104,6 @@ void GameState::update() {
 
 void GameState::draw() {
     this->_data->window.clear();
-
     this->_data->window.draw(background);
     this->_data->window.draw(tm);
     this->_data->window.draw(this->_vidas);
