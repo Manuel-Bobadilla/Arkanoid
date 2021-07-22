@@ -65,16 +65,14 @@ void PauseState::handleInput()
     }
 }
 
-void PauseState::update(float dt) {
+void PauseState::update() {
 
 }
 
-void PauseState::draw(float dt) {
+void PauseState::draw() {
     this->_data->window.clear(sf::Color::Black);
-
     this->_data->window.draw(this->_background);
     this->_data->window.draw(this->_resumeButton);
     this->_data->window.draw(this->_goToMenuButton);
-
     this->_data->window.display();
 }

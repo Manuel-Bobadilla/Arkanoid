@@ -44,8 +44,7 @@ void GameState::handleInput() {
     }
 }
 
-void GameState::update(float dt) {
-
+void GameState::update() {
     if (counter != player.getContainerSelected()) {
         it = player.getTextureContainer(player.getContainerSelected()).createIterator();
     }
@@ -103,7 +102,7 @@ void GameState::update(float dt) {
     }
 }
 
-void GameState::draw(float dt) {
+void GameState::draw() {
     this->_data->window.clear();
 
     this->_data->window.draw(background);

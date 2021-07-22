@@ -62,11 +62,11 @@ void GameOverState::handleInput()
     }
 }
 
-void GameOverState::update(float dt) {
+void GameOverState::update() {
 
 }
 
-void GameOverState::draw(float dt) {
+void GameOverState::draw() {
     this->_data->window.clear(sf::Color::Black);
 
     this->_data->window.draw(this->background);

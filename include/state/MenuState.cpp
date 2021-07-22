@@ -91,11 +91,11 @@ void MenuState::handleInput() {
     }
 }
 
-void MenuState::update(float dt) {
+void MenuState::update() {
 
 }
 
-void MenuState::draw(float dt) {
+void MenuState::draw() {
     this->_data->window.clear();
 
     this->_data->window.draw(this->_background);

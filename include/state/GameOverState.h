@@ -15,8 +15,8 @@ public:
     GameOverState(GameDataPtr data);
     void init();
     void handleInput();
-    void update(float dt);
-    void draw(float dt);
+    void update();
+    void draw();
 };
 
 
