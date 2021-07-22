@@ -22,12 +22,9 @@ private:
 public:
     StateMachine() {}
     ~StateMachine() {}
-
     void addState(StateRef newState, bool isReplacing = true);
     void removeState();
-
     void processStateChanges();
-
     StateRef &getActiveState();
 };
 

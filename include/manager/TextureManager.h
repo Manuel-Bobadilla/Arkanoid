@@ -33,13 +33,10 @@ private:
     std::vector<Bullet>* bullets;
     BrickFactory* brickFactory = new BrickFactory;
     BrickInterface* brickInterface = new BrickInterface;
-
-public:
-    TextureManager(Player& p, Ball& b, std::vector<Powerup*>& pu, std::vector<Bullet>& bu);
-
-    BrickInterface* getBrickInterface();
-
 protected:
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+public:
+    TextureManager(Player& p, Ball& b, std::vector<Powerup*>& pu, std::vector<Bullet>& bu);
+    BrickInterface* getBrickInterface();
 };
 #endif // INCLUDE_TEXTUREMANAGER_H_

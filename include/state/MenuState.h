@@ -11,28 +11,23 @@
 
 
 class MenuState: public State {
-public:
-    MenuState(GameDataPtr data);
-
-    void init();
-
-    void handleInput();
-    void update(float dt);
-    void draw(float dt);
 private:
     GameDataPtr _data;
     bool isSoundEnabled();
-
     sf::Sprite _background;
     sf::Sprite _gameIcon;
     sf::Sprite _soundIcon;
-
     sf::Text _playButton;
     sf::Text _quitButton;
-
     sf::Music gameMusic;
     sf::SoundBuffer selectSB;
     sf::Sound selectSound;
+public:
+    MenuState(GameDataPtr data);
+    void init();
+    void handleInput();
+    void update(float dt);
+    void draw(float dt);
 };
 
 

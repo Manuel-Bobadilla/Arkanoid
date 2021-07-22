@@ -16,7 +16,6 @@
 class BrokenBrick : public Brick{
 private:
     sf::Vector2f pos;
-
 public:
     void setPosition(sf::Vector2f p);
     sf::Vector2f getPosition();

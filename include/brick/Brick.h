@@ -16,18 +16,14 @@ protected:
     std::optional<std::string> color;
 public:
     virtual ~Brick(){};
-
     void setId(int id);
     unsigned int getId();
     void setTexture(std::string path);
     void setTexture(sf::Texture &tx);
     sf::Texture &getTexture();
     void setSpriteTxRect(sf::IntRect r);
-
     sf::Sprite &getSprite();
-
     void setColor(std::string color);
-
 };
 
 

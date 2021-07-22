@@ -30,9 +30,7 @@ private:
     std::unordered_map<BrickId, Brick*> brickHashMap;
 public:
     virtual ~BrickFactory();
-
     Brick* getBrick(BrickId id);
-
 };
 
 

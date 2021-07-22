@@ -10,27 +10,22 @@
 #include <SFML/Graphics.hpp>
 
 class PauseState: public State {
-public:
-    PauseState(GameDataPtr data);
-
-    void init();
-
-    void handleInput();
-    void update(float dt);
-    void draw(float dt);
 private:
     GameDataPtr _data;
     bool isSoundEnabled();
-
     sf::Sprite _background;
     sf::Sprite _soundIcon;
-
     sf::Text _resumeButton;
     sf::Text _goToMenuButton;
-
     sf::Music gameMusic;
     sf::SoundBuffer selectSB;
     sf::Sound selectSound;
+public:
+    PauseState(GameDataPtr data);
+    void init();
+    void handleInput();
+    void update(float dt);
+    void draw(float dt);
 };
 
 

@@ -9,18 +9,15 @@
 #include <map>
 
 class SoundManager {
-public:
-    SoundManager() {}
-    ~SoundManager() {}
-
-    void loadSoundBuffer(std::string name, std::string filePath);
-    void playSound(std::string name);
-
-    void playMusic(sf::Music &music, std::string filePath);
-
 private:
     std::map<std::string, sf::Sound> sounds;
     std::map<std::string, sf::SoundBuffer> soundBuffers;
+public:
+    SoundManager() {}
+    ~SoundManager() {}
+    void loadSoundBuffer(std::string name, std::string filePath);
+    void playSound(std::string name);
+    void playMusic(sf::Music &music, std::string filePath);
 };
 
 

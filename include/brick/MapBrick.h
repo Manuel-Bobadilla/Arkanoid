@@ -11,14 +11,11 @@
 #include "Brick.h"
 
 class MapBrick: public Brick {
+private:
     sf::Vector2f pos;
-    std::string color;
-
 public:
     void setPosition(sf::Vector2f p);
     sf::Vector2f getPosition();
-    std::string getColor();
-    void setColor(std::string color);
 };
 
 

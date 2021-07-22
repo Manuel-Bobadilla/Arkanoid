@@ -11,11 +11,3 @@ void MapBrick::setPosition(sf::Vector2f p){
 sf::Vector2f MapBrick::getPosition(){
     return pos;
 }
-
-std::string MapBrick::getColor(){
-    return color;
-}
-
-void MapBrick::setColor(std::string color){
-    this->color = color;
-}

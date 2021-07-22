@@ -16,7 +16,6 @@ private:
     sf::Texture tx;
     tmx::Vector2f pos;
     tmx::Vector2f vel;
-
 public:
     Ball();
     void setTexture(std::string path);

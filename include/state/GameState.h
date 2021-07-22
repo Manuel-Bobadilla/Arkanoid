@@ -27,12 +27,9 @@ private:
     int counter = 0;
     sf::Text _vidas;
     sf::Text _cantVidas;
-
 public:
     GameState(GameDataPtr data);
-
     void init();
-
     void handleInput();
     void update(float dt);
     void draw(float dt);

@@ -11,12 +11,9 @@ private:
     sf::Sprite background;
     sf::Text retryButton;
     sf::Text homeButton;
-
 public:
     GameOverState(GameDataPtr data);
-
     void init();
-
     void handleInput();
     void update(float dt);
     void draw(float dt);

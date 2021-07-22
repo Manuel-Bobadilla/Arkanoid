@@ -8,25 +8,21 @@
 template <class T>
 class Container {
     friend class AnimationManager<T,Container>;
+private:
+    std::vector<T> mData;
 public:
     void add(T a){
         mData.push_back(a);
     }
-
     bool isEmpty(){
         return mData.empty();
     }
-
     AnimationManager<T,Container> *createIterator(){
         return new AnimationManager<T,Container>(this);
     };
-
     AnimationManager<T,Container> &getIterator(){
         return AnimationManager<T,Container>(this);
     }
-
-private:
-    std::vector<T> mData;
 };
 
 
