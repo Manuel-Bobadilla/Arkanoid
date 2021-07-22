@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="15" height="60" tilewidth="54" tileheight="18" infinite="0" nextlayerid="7" nextobjectid="155">
+ <tileset firstgid="1" source="Fondo.tsx"/>
+ <tileset firstgid="2" source="Ladrillo.tsx"/>
+ <tileset firstgid="9" source="LadrilloRoto.tsx"/>
+ <tileset firstgid="16" source="Jugador.tsx"/>
+ <tileset firstgid="19" source="Bola.tsx"/>
+ <tileset firstgid="20" source="LadrilloBorde.tsx"/>
+ <layer id="1" name="Fondo" width="15" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Jugador">
+  <object id="1" x="412.044" y="926.379"/>
+ </objectgroup>
+ <objectgroup id="3" name="Pelota">
+  <object id="3" x="410.283" y="915.568"/>
+ </objectgroup>
+ <objectgroup id="4" name="Ladrillo">
+  <object id="11" x="54" y="144" width="54" height="18">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="12" x="54" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="15" x="702" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="35" x="108" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="36" x="162" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="37" x="216" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="38" x="270" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="39" x="324" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="40" x="378" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="41" x="432" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="42" x="486" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="43" x="540" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="44" x="594" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="45" x="648" y="198" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="47" x="108" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="48" x="162" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="49" x="216" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="50" x="270" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="51" x="324" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="52" x="378" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="53" x="432" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="54" x="486" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="55" x="540" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="56" x="594" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="57" x="648" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="58" x="702" y="144" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="60" x="54" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="61" x="108" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="62" x="162" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="63" x="216" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="64" x="270" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="65" x="324" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="66" x="378" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="67" x="432" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="68" x="486" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="69" x="540" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="70" x="594" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="71" x="648" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="74" x="702" y="252" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="102" x="53.9955" y="162" width="54" height="18">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="103" x="701.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="104" x="107.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="105" x="161.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="106" x="215.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="107" x="269.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="108" x="323.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="109" x="377.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="110" x="431.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="111" x="485.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="112" x="539.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="113" x="593.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="114" x="647.995" y="162" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+  </object>
+  <object id="115" x="54.0035" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="116" x="108.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="117" x="162.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="118" x="216.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="119" x="270.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="120" x="324.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="121" x="378.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="122" x="432.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="123" x="486.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="124" x="540.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="125" x="594.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="126" x="648.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="127" x="702.003" y="216.002" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="purple"/>
+   </properties>
+  </object>
+  <object id="142" x="54.0031" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="143" x="108.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="144" x="162.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="145" x="216.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="146" x="270.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="147" x="324.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="148" x="378.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="149" x="432.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="150" x="486.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="151" x="540.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="152" x="594.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="153" x="648.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object id="154" x="702.003" y="270" width="53.259" height="17.7465">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="Borde">
+  <object id="20" x="755" y="0" width="54" height="1079">
+   <properties>
+    <property name="name" value="rightBorder"/>
+   </properties>
+  </object>
+  <object id="26" x="54" y="0" width="701" height="36">
+   <properties>
+    <property name="name" value="topBorder"/>
+   </properties>
+  </object>
+  <object id="27" x="0" y="0" width="54" height="1079">
+   <properties>
+    <property name="name" value="leftBorder"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="6" name="Frente" width="15" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,6,6,6,6,6,6,6,6,6,6,6,6,6,0,
+21,6,6,6,6,6,6,6,6,6,6,6,6,6,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,4,4,4,4,4,4,4,4,4,4,4,4,4,21,
+0,4,4,4,4,4,4,4,4,4,4,4,4,4,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,
+21,2,2,2,2,2,2,2,2,2,2,2,2,2,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,19,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,16,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,21
+</data>
+ </layer>
+</map>

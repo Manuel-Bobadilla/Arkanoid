@@ -1,0 +1,39 @@
+name: Lint and Build
+on: [push, pull_request]
+jobs:
+  cpplint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+      - name: Installing Python
+        uses: actions/setup-python@v2
+      - run: pip install cpplint
+
+      - name: 🚀 Running cpplint
+        run: cpplint --recursive .
+  build:
+    name: ${{ matrix.os }}-building
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, macos-latest] #, windows-latest ]
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Linux Dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt install libsfml-dev
+      - name: Install dependencies (macOS)
+        if: runner.os == 'MacOS'
+        run: brew install sfml
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -S $GITHUB_WORKSPACE -B $GITHUB_WORKSPACE/build -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/install -DCMAKE_VERBOSE_MAKEFILE=ON
+
+      - name: 🔨  Build
+        shell: bash
+        run: cmake --build $GITHUB_WORKSPACE/build --config Release --target install
