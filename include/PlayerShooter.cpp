@@ -6,7 +6,12 @@
 
 PlayerShooter::PlayerShooter(Player &p) {
     player = &p;
-    player->setTexture("../assets/images/53-Breakout-Tiles.png");
+    player->setContainerSelected(3);
+    if (player->getTextureContainer(player->getContainerSelected()).isEmpty()) {
+        sf::Texture t;
+        t.loadFromFile("../assets/images/53-Breakout-Tiles.png");
+        player->getTextureContainer(player->getContainerSelected()).add(t);
+    }
 }
 
 Bullet* PlayerShooter::shoot() {

@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "manager/animation/Container.h"
 
-void Player::setTexture(std::string path){
+void Player::setTexture(const std::string& path){
     tx.loadFromFile(path);
     sp.setTexture(tx);
 }
@@ -10,7 +10,7 @@ void Player::setTexture(const sf::Texture& t){
     tx = t;
     sp.setTexture(t);
 }
-void Player::appendTexture(std::string path, int pos){
+void Player::appendTexture(const std::string& path, int pos){
     sf::Texture t;
     t.loadFromFile(path);
     txs[pos].add(t);

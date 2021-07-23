@@ -19,13 +19,13 @@ private:
     sf::Sprite sp;
     sf::Texture tx;
     tmx::Vector2f pos;
-    Container<sf::Texture> txs[3];
+    Container<sf::Texture> txs[4]; //Cantidad de contenedores de texturas para el player
     int containerSelected = 0;
     unsigned int lives = 3;
 public:
-    void setTexture(std::string path);
+    void setTexture(const std::string& path);
     void setTexture(const sf::Texture& t);
-    void appendTexture(std::string path, int pos);
+    void appendTexture(const std::string& path, int pos);
     Container<sf::Texture> &getTextureContainer(int pos);
     void setPosition(tmx::Vector2f p);
     sf::Texture getTexture();

@@ -1,9 +1,9 @@
 # Arkanoid
-[![Build](https://github.com/UCC-ArquitecturaSoftwareI/2021-React-Madrid/actions/workflows/LintAndBuild.yml/badge.svg)](https://github.com/UCC-ArquitecturaSoftwareI/2021-React-Madrid/actions/workflows/LintAndBuild.yml)
+[![Build](https://github.com/Manuel-Bobadilla/Arkanoid/actions/workflows/LintAndBuild.yml/badge.svg)](https://github.com/Manuel-Bobadilla/Arkanoid/actions/workflows/LintAndBuild.yml)
 
-Proyecto de la materia Arquitectura de Software I
+Continuación del Proyecto de la materia Arquitectura de Software I
 
-## Integrantes:
+## Realizado Por:
 
 * Gino Antonel
 * Facundo Barafani

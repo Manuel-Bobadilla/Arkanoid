@@ -18,14 +18,15 @@ void PowerupBaseShoot::effect() {
         active = true;
     }
     if(frameCounter % 100 == 0){
-        bullets->push_back(playerShooter->shoot()[0]);
-        bullets->push_back(playerShooter->shoot()[1]);
+        Bullet* balas = playerShooter->shoot();
+        bullets->push_back(balas[0]);
+        bullets->push_back(balas[1]);
     }
     frameCounter++;
     if(frameCounter > 600){
         frameCounter = 0;
         if(player->getSprite().getTextureRect().width == 68){
-            player->setTexture("../assets/images/50-Breakout-Tiles.png");
+            player->setContainerSelected(0);
         }
         active = false;
     }
