@@ -20,6 +20,7 @@ private:
     TextureManager tm = TextureManager(player, ball, powerup, bullets);
     CollisionManager cm = CollisionManager(player, ball, powerup, bullets);
     AnimationManager<sf::Texture, Container<sf::Texture>> *it = player.getTextureContainer(0).createIterator();
+    ActionManager am = ActionManager(player,_data->window.getSize().x);
     tmx::Vector2f playerInitialPos;
     tmx::Vector2f ballInitialPos;
     tmx::Vector2f ballInitialVel;

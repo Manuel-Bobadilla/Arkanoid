@@ -11,9 +11,10 @@
 class ActionManager{
 private:
     Player* player;
-    tmx::Vector2f posicion;
+    int windowWidth;
 public:
     ActionManager(Player& p, int window);//Player movement constructor
+    void movePlayer();
 };
 
 #endif // INCLUDE_ACTIONMANAGER_H

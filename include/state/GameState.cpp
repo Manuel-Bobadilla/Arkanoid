@@ -94,7 +94,9 @@ void GameState::update() {
             }
         }
     }
-    ActionManager(player, this->_data->window.getSize().x);
+
+    am.movePlayer();
+
     if(brickInterface->getMapb().empty()){
         this->_data->machine.addState(StateRef(new GameOverState(_data)), true);
     }
