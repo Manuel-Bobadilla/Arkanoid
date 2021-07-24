@@ -16,7 +16,11 @@ void PowerupBigBase::effect() {
         player->setContainerSelected(1);
         if (player->getTextureContainer(player->getContainerSelected()).isEmpty()) {
             sf::Texture t;
-            t.loadFromFile("../assets/images/56-Breakout-Tiles.png");
+            t.loadFromFile("../assets/images/baseGrande1.png");
+            player->getTextureContainer(player->getContainerSelected()).add(t);
+            t.loadFromFile("../assets/images/baseGrande2.png");
+            player->getTextureContainer(player->getContainerSelected()).add(t);
+            t.loadFromFile("../assets/images/baseGrande3.png");
             player->getTextureContainer(player->getContainerSelected()).add(t);
         }
         player->setSpriteTxRect(sf::IntRect(0, 0, 97,18));

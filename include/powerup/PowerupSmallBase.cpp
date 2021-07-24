@@ -16,7 +16,11 @@ void PowerupSmallBase::effect(){
         player->setContainerSelected(2);
         if(player->getTextureContainer(player->getContainerSelected()).isEmpty()){
             sf::Texture t;
-            t.loadFromFile("../assets/images/57-Breakout-Tiles.png");
+            t.loadFromFile("../assets/images/baseChica1.png");
+            player->getTextureContainer(player->getContainerSelected()).add(t);
+            t.loadFromFile("../assets/images/baseChica2.png");
+            player->getTextureContainer(player->getContainerSelected()).add(t);
+            t.loadFromFile("../assets/images/baseChica3.png");
             player->getTextureContainer(player->getContainerSelected()).add(t);
         }
         player->setSpriteTxRect(sf::IntRect(0, 0, 32,18));
