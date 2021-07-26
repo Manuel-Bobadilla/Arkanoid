@@ -14,8 +14,8 @@ Powerup* PowerupFactory::getPowerup(){
 
     Powerup *p = nullptr;
 
-    switch (rand() % 5) {
-        case 0: p = new PowerupBaseShoot(*player, *bullets);break;
+    switch (rand() % 1) {
+        case 0: p = new PowerupBaseShoot(*player, *bullets, textureBullets);break;
         case 1: p = new PowerupBigBase(*player);break;
         case 2: p = new PowerupInvisible(*ball);break;
         case 3: p = new PowerupSmallBall(*ball);break;

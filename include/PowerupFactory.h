@@ -10,6 +10,7 @@
 #include "powerup/PowerupSmallBall.h"
 #include "powerup/PowerupSmallBase.h"
 #include "powerup/PowerupBaseShoot.h"
+#include "manager/BulletTextureManager.h"
 #include <cstdlib>
 #include <ctime>
 
@@ -18,6 +19,7 @@ private:
     Ball *ball;
     Player *player;
     std::vector<Bullet> *bullets;
+    BulletTextureManager textureBullets;
 public:
     PowerupFactory(Ball &b, Player &p, std::vector<Bullet> &bu);
     Powerup* getPowerup();

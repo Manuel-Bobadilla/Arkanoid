@@ -5,7 +5,6 @@
 #ifndef INCLUDE_BORDER_H_
 #define INCLUDE_BORDER_H_
 
-#include <iostream>
 #include "SFML/Graphics.hpp"
 #include <string>
 #include "Brick.h"

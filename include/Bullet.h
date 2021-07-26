@@ -14,12 +14,13 @@
 class Bullet {
 private:
     sf::Sprite sp;
-    sf::Texture tx;
+    sf::Texture* tx;
     tmx::Vector2f pos;
     tmx::Vector2f vel;
 public:
     Bullet();
     void setTexture(std::string path);
+    void setTexture(sf::Texture &texture);
     void setPosition(tmx::Vector2f p);
     sf::Texture getTexture();
     tmx::Vector2f getPosition();

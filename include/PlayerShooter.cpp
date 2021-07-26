@@ -25,8 +25,5 @@ Bullet* PlayerShooter::shoot() {
     displacement.y = 0;
     bullet[0].setPosition(player->getPosition());
     bullet[1].setPosition(player->getPosition() + displacement);
-    for(int i = 0; i < 2 ; i++){
-        bullet[i].setTexture("../assets/images/61-Breakout-Tiles.png");
-    }
     return bullet;
 }

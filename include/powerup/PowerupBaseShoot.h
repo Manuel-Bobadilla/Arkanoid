@@ -7,15 +7,17 @@
 
 #include "../Powerup.h"
 #include "../PlayerShooter.h"
+#include "../manager/BulletTextureManager.h"
 
 class PowerupBaseShoot: public Powerup{
 protected:
     Player* player;
     PlayerShooter *playerShooter;
     std::vector<Bullet> *bullets;
+    BulletTextureManager *txBullets;
     int frameCounter;
 public:
-    PowerupBaseShoot(Player &p, std::vector<Bullet>&b);
+    PowerupBaseShoot(Player &p, std::vector<Bullet>&b, BulletTextureManager &txb);
     void effect() override;
 };
 

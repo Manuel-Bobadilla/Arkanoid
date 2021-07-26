@@ -6,7 +6,6 @@
 #define PROJECTTEMAPLATE_BRICK_H
 #include "SFML/Graphics.hpp"
 #include <string>
-#include <iostream>
 
 class Brick {
 protected:

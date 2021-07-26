@@ -7,6 +7,7 @@
 
 #include "Player.h"
 #include "Bullet.h"
+#include "manager/BulletTextureManager.h"
 #include <iostream>
 
 class PlayerShooter{

@@ -10,8 +10,13 @@ Bullet::Bullet(){
 }
 
 void Bullet::setTexture(std::string path){
-    tx.loadFromFile(path);
-    sp.setTexture(tx);
+    tx = new sf::Texture;
+    tx->loadFromFile(path);
+    sp.setTexture(*tx);
+}
+void Bullet::setTexture(sf::Texture &texture) {
+    tx = &texture;
+    sp.setTexture(*tx);
 }
 
 void Bullet::setPosition(tmx::Vector2f p){
@@ -20,7 +25,7 @@ void Bullet::setPosition(tmx::Vector2f p){
 }
 
 sf::Texture Bullet::getTexture(){
-    return tx;
+    return *tx;
 }
 
 tmx::Vector2f Bullet::getPosition(){

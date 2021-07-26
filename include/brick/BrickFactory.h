@@ -10,7 +10,6 @@
 #include "MapBrick.h"
 #include "BrokenBrick.h"
 #include "SFML/Graphics.hpp"
-#include <iostream>
 #include <string>
 #include <tmxlite/Layer.hpp>
 #include <tmxlite/ObjectGroup.hpp>

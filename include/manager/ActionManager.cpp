@@ -10,7 +10,6 @@ ActionManager::ActionManager(Player& p, int window) {
 }
 void ActionManager::movePlayer(){
     tmx::Vector2f posicion = player->getPosition();
-// Key Management
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)){
         if (posicion.x > 54){
             posicion.x -= 3;
