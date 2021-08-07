@@ -12,7 +12,6 @@
 #include "../brick/BrickFactory.h"
 #include "../brick/BrickInterface.h"
 #include "SFML/Graphics.hpp"
-#include <iostream>
 #include <math.h>
 #include <string>
 #include <tmxlite/Layer.hpp>

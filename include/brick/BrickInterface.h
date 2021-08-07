@@ -7,7 +7,6 @@
 #include "BrokenBrick.h"
 #include <vector>
 
-
 class BrickInterface {
 private:
     std::vector<BorderBrick*> borderB;

@@ -10,7 +10,6 @@
 #include "manager/TextureManager.h"
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Event.hpp>
-#include <iostream>
 #include <memory>
 #include <string>
 

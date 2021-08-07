@@ -36,7 +36,7 @@ void BrickInterface::storeBrick(Brick* brick,sf::Vector2f pos){
             break;
         }
         default:
-            std::cout << "Unreachable code!" << std::endl;
+            throw 1;
     }
 }
 

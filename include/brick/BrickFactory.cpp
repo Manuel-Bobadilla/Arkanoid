@@ -29,7 +29,7 @@ Brick* BrickFactory::getBrick(BrickId id){
                 b->setId(BrickId::brokenBrick);
                 break;
             default:
-                std::cout << "Unreachable code!" << std::endl;
+                throw 1;
         }
         brickHashMap[id] = b;
     }

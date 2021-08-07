@@ -12,7 +12,6 @@
 #include <string>
 #include "manager/animation/AnimationManager.h"
 #include "manager/animation/Container.h"
-#include <iostream>
 
 class Player {
 private:

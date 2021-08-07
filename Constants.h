@@ -7,9 +7,9 @@
 
 #define SCREEN_HEIGHT 1079
 
-#define SCREEN_WIDTH 775
+#define SCREEN_WIDTH 810
 
-#define MENU_BACKGROUND_FILEPATH "../assets/images/Mapa.jpg"
+#define MENU_BACKGROUND_FILEPATH "../assets/images/Mapa.png"
 
 #define MENU_SOUND_ENABLED_FILEPATH "../assets/images/sound-enabled.png"
 

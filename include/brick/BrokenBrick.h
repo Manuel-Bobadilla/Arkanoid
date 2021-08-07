@@ -6,7 +6,6 @@
 #define INCLUDE_BROKENBRICK_H
 
 #include "SFML/Graphics.hpp"
-#include <iostream>
 #include <string>
 #include <tmxlite/Layer.hpp>
 #include <tmxlite/ObjectGroup.hpp>

@@ -6,6 +6,7 @@
 #define PROJECTTEMAPLATE_BULLETTEXTUREMANAGER_H
 
 #include <SFML/Graphics/Texture.hpp>
+
 class BulletTextureManager{
 private:
     sf::Texture tx;

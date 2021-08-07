@@ -7,7 +7,6 @@
 
 #include "SFML/Graphics.hpp"
 #include <string>
-#include <iostream>
 #include "Brick.h"
 
 class MapBrick: public Brick {
