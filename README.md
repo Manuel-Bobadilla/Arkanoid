@@ -24,13 +24,3 @@ Desarrollo de un juego basado en el Arkanoid, programado en C++ con la utilizaci
 |                   ---                       |                     ---                      |
 | ![Menu](https://i.imgur.com/PsYfIE6.png)    | ![Juego](https://i.imgur.com/pqP8YN5.png)    | 
 | ![Pausa](https://i.imgur.com/Oe6KFSv.png)   |                                              |
-
-## Construcción del proyecto
-
-```
- cd {proyect dir}
- mkdir build
- cd build
- cmake ..
- make -j5
- ```
